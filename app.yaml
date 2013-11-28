@@ -1,0 +1,29 @@
+application: tipoodev
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /Templates/CSS
+  static_dir: Templates/CSS
+
+- url: /Templates/Imagenes
+  static_dir: Templates/Imagenes
+
+#- url: /Templates/jQuery
+  #static_dir: jQuery
+
+#- url: /Templates/JS
+  #static_dir: JS
+
+
+
+- url: /.*
+  script: Main.app
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: 2.6

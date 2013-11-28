@@ -1,0 +1,10 @@
+{% extends "muestra_publicidad.html" %}
+{% block title%}
+	{{titulo}}
+{% endblock %}
+
+
+
+{% block content %}
+	{{links}}
+{% endblock %}

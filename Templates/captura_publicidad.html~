@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <header>
+
+      <link rel="stylesheet" href="style.css" />
+      <title>Captura de nueva Publicidad</title>
+    
+    </header>
+
+</head>
+
+<body>
+    <h1>Nueva Publicidad</h1>
+    <article>
+        <form action="/captura_publicidad" enctype="multipart/form-data" method="post">
+            Empresa:<input type="text" name="empresa"></input>
+            <br >
+            <br >
+            Ubicacion de la empresa (o lugar referenciado por la publicidad):
+            <br >
+            Ciudad:<input type="text" name="ciudad"></input>
+            Estado:<input type="text" name="estado"></input>
+            Pais:<input type="text" name="pais"></input>
+            <br >
+            <br >
+            Url Destino Publicidad:<input type="text" name="url"></input>
+            <br >
+            Imagen:<input type="file" accept="image/*" name="imagen"></input>
+            <br >
+            <br >
+            Fecha de Vencimiento:
+            <br >
+            Dia:<input type="text" name="day"></input>-Mes:<input type="text" name="month"></input>-Año:<input type="text" name="year"></input>(dd-mm-aaaa)
+            <br >
+            <br >
+            <input type="submit" value="Guardar" name="guardar"></input>
+        </form>
+    </article>
+
+    <footer>
+
+    </footer>
+</body>

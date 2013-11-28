@@ -1,0 +1,353 @@
+/* Ian Alfonso Ruiz Naranjo*/
+/* Contiene los componentes que caracterízan la página principal */
+/* Contenedor Principal, todo lo que existe, está dentro de él */
+.Contenedor-Principal
+	{
+		position:absolute;
+		left:50%;
+		top:0px;
+		width:1200px;
+		margin-left:-600px;
+		height:2000px;
+	}
+/* --------------------------------- Cabeza */
+/* Contenedor del buscador, todo lo relacionado del buscador, está ahí */
+.Contenedor-Buscador
+	{
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:1200px;
+		height:238px;
+	}
+/* Posiciona y acomoda el logotipo de Seaeve */
+.Logo-1
+	{	
+		position:absolute;
+		left:50%;
+		margin-left:-300px;
+		top:40px;
+		width:600px;
+		height:150px;
+		background-image: url('../Imagenes/Logo 1.fw.png');
+		z-index: 1;
+	}
+/* El fondo de la barra es cargado de una imagen por fines prácticos, más tarde probablemente sea completamente código */
+.Buscador-Fondo-1
+	{
+		position:absolute;
+		left:194px;
+		top:208px;
+		height:55px;
+		width:735px;
+		background-image: url('../Imagenes/Fondo Busqueda 1.fw.png');
+		z-index: 2;
+	}
+/* Posiciona la caja de texto y da formato */
+.Caja-De-Texto
+	{
+		position:absolute;
+		top:216px;
+		left:205px;
+		height:37px;
+		width:620px;
+		padding-left:16px;
+		background-color:transparent;
+		border:none;
+		color:rgb(35,35,35);
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		font-size:16px;
+		z-index: 3;
+	}
+/* Botón que detona la búsqueda, posicionado y texturizado */
+.Boton-1
+	{	
+		position:absolute;
+		top:216px;
+		left:841px;
+		height:29px;
+		padding-top:10px;
+		width:125px;
+		background-image: url('../Imagenes/Fondo Boton 1.fw.png');
+		color:rgb(87,87,72);
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		font-size:15px;
+
+		-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.65);
+		-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.65);
+		-o-box-shadow:1px 1px 2px rgba(0,0,0,0.65);
+		-ms-box-shadow:1px 1px 2px rgba(0,0,0,0.65);
+		box-shadow:1px 1px 2px rgba(0,0,0,0.65);
+		-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=1,OffY=1,Color=#a6000000,Positive=true)";
+		filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=1,OffY=1,Color=#a6000000,Positive=true);
+		z-index:2;
+	}
+/* Se posiciona el control Ingresar */
+.Ingresar
+	{
+		position:absolute;
+		top:166px;
+		left:0px;
+		width:67px;
+		height:35px;
+		padding-top:80px;
+		background-image: url('../Imagenes//Ingresar.fw.png');
+		background-position:top;
+		background-repeat:no-repeat;
+		background-position:center;
+		text-align: center;
+		color:rgb(152,203,1);
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	}
+/* Se posiciona el control Registrarse */
+.Registrarse
+	{
+		position:absolute;
+		top:166px;
+		left:88px;
+		width:80px;
+		height:35px;
+		padding-top:80px;
+		background-image: url('../Imagenes/Registrarse.fw.png');
+		background-position:top;
+		background-repeat:no-repeat;
+		background-position:center;
+		text-align: center;
+		color:rgb(152,203,1);
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	}
+/* --------------------------------- Cuerpo */
+/* Stripes denomino a las lineas o superficies sin funcion otra que la de adornar */
+.Stripe-1
+	{
+		position:absolute;
+		top:324px;
+		left:0px;
+		width:936px;
+		height:8px;
+		background-image: url('../Imagenes/Hora.fw.png');
+	}
+.Stripe-2
+	{
+		position:absolute;
+		top:324px;
+		left:936px;
+		width:8px;
+		height:1706px;
+		background-image: url('../Imagenes/Hora.fw.png');
+	}
+.Stripe-3
+	{
+		position:absolute;
+		top:880px;
+		left:0px;
+		width:936px;
+		height:133px;
+		background-image: url('../Imagenes/Banner-1.fw.png');
+	}
+.Stripe-4
+	{
+		position:absolute;
+		top:1013px;
+		left:0px;
+		width:936px;
+		height:12px;
+		background-image: url('../Imagenes/Blanco.fw.png');
+	}
+/* Sección que contendrá al API de Google Maps */
+.Mapa
+	{	
+		position:absolute;
+		top:332px;
+		left:0px;
+		width:936px;
+		height:548px;
+		background-color:#000000;
+	}
+/* Botón crear evento */
+.Crear-Evento
+	{
+		position:absolute;
+		top:324px;
+		right:0px;
+		width:256px;
+		height:41px;
+		padding-top:10px;
+		font-size:25px;
+		text-align:left;
+		text-indent:10px;
+		color:#FFFFFF;
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		background-image: url('../Imagenes/Crear-Evento.fw.png');
+	}
+/* Botón de contacto */
+.Contactar
+	{
+		position:absolute;
+		top:381px;
+		right:0px;
+		width:256px;
+		height:41px;
+		padding-top:10px;
+		font-size:25px;
+		text-align:left;
+		text-indent:10px;
+		color:#FFFFFF;
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		background-image: url('../Imagenes/Contactar.fw.png');
+	}
+/* Botón para compartir la página o algo */
+.Compartir
+	{
+		position:absolute;
+		top:439px;
+		right:0px;
+		width:256px;
+		height:41px;
+		padding-top:10px;
+		font-size:25px;
+		text-align:left;
+		text-indent:10px;
+		color:#FFFFFF;
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		background-image: url('../Imagenes/Compartir.fw.png');
+	}
+.Contenedor-Eventos
+	{
+		position:absolute;
+		top:1025px;
+		left:0px;
+		height:1005px;
+		width:936px;
+	}
+.Contenedor-Privado
+	{
+		float:left;
+		height:1005px;
+		width:465px;
+	}
+.Contenedor-Publico
+	{
+		float:left;
+		height:1005px;
+		width:465px;	
+	}
+.Privado
+	{
+		float:left;
+		width:455px;
+		height:315px;
+		background-image: url('../Imagenes/Privado-1.fw.png');
+		background-position:center;
+		background-repeat:no-repeat;
+		margin-top: 10px;
+		margin-bottom:10px;
+	}
+.Gratuito
+	{
+		float:left;
+		width:455px;
+		height:315px;
+		background-image: url('../Imagenes/Gratuito-1.fw.png');
+		background-position:center;
+		background-repeat:no-repeat;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+.Barra-Categorias
+	{	
+		position:absolute;
+		top:270px;
+		left:0px;
+		z-index:20;
+		width:1000px;
+		height:40px;
+		color:#FFFFFF;
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		font-size:15px;
+	}
+.Categorias
+	{
+		float:left;
+		width:250px;
+		height:30px;
+		text-align:center;
+		padding-top:10px;
+	}
+.Cabeza-Privado
+	{
+		float:left;
+		width:471px;
+		height:121px;
+		background-image: url('../Imagenes/De-Paga.png');
+	}
+.Cabeza-Gratuitos
+	{	
+		float:left;
+		width:471px;
+		height:121px;
+		background-image: url('../Imagenes/Gratuitos.png');
+	}
+.Flecha-Verde
+	{	
+		height:20px;
+		width:16px;
+		padding-top:5px;
+		background-image: url("../Imagenes/Flecha-Abajo-1.fw.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		float:right;
+	}
+.Patrocinadores
+	{	
+		position:absolute;
+		right:60px;
+		top:550px;
+		width:150px;
+		height:42px;
+		background-image: url("../Imagenes/Patrocinadores.png");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+/* En este segmento se desplegará la publicidad */
+/* Cuenta con la clase "Publicidad" para contener las imagenes o .swf */
+/* La clase Expansor de publicidad se encarga de engañar al ojo conteniendo al wrapper 
+de de la publicidad, permitiendo un scroll controlado siempre */ 
+/* Es necesario que cuando se agregen más elementos de la clase "Publicidad", la clase "Contenedor-De-Publicidad" aumente también, es
+parte de un sencillo truco, para funcionar, esto se debe cumplir, se recomienda usar algún procedimiento de javascript para incrementar
+gradualmente el "height" de este elemento. */
+.Expansor-Publicidad
+	{
+		position:absolute;
+		top:650px;
+		right:0px;
+		width:250px;
+		height:1100px;
+		overflow-y:scroll;
+		overflow-x:hidden;
+	}
+.Contenedor-de-publicidad
+	{
+		position:absolute;
+		top:0px;
+		right:0px;
+		width:250px;
+		/* Este es el elemento que tiene que incrementarse */
+			height:2000px;
+		/* ---------------------- */
+	}
+/* Cuadro de Publicidad */
+.Publicidad	
+	{
+		float:left;
+		width:250px;
+		height:180px;
+	}
+/* Imagen en todo su esplendor */
+.Imagen-Publicidad
+	{
+		width:250px;
+		height:180px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}

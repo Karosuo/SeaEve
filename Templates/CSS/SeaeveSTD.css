@@ -1,0 +1,94 @@
+/* Ian Alfonso Ruiz Naranjo*/
+/* Contiene los componentes estandar para la interfaz de Seaeve© */
+/* El fondo de pantalla siempre tendrá ese fondo texturizado, como una especie de tela */
+body
+	{
+		background-image: url('../Imagenes/Fondo 1.fw.png');
+		background-repeat: repeat;
+		text-align: center;
+		cursor:default;
+		margin:0px;
+		padding:0px;
+	}
+/* Contenedor de los displays de la fecha */
+.Fecha
+	{
+		position:absolute;
+		right:0px;
+		top:30px;
+		width:102px;
+		height:102px;
+		background-image: url('../Imagenes/Hora.fw.png');
+		background-repeat: repeat;
+	}
+/* Display del día en su número de calendario */
+.Dia-Numero
+	{
+		float:left;
+		width:;
+		height:;
+		margin:;
+		color:rgb(255,255,255);
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		font-size:50px;
+		text-indent: 10px;
+	}
+/* Display del día en texto */
+.Dia-Texto
+	{
+		float:left;
+		width:;
+		height:;
+		margin:;
+		color:rgb(255,255,255);
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		font-size:20px;
+		text-indent: 10px;
+	}
+/* Contenedor de los displays de la hora */
+.Hora
+	{
+		position:absolute;
+		right:0px;
+		top:160px;
+		width:48px;
+		height:102px;
+		background-image: url('../Imagenes/Fecha.fw.png');
+		background-repeat: repeat;
+	}
+/* Display de las horas*/
+.Horas
+	{
+		float:left;
+		width:;
+		height:;
+		margin:;
+		color:rgb(255,255,255);
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		font-size:24px;
+		text-indent: 5px;
+	}
+/* Display de los minutos */
+.Minutos
+	{
+		float:left;
+		width:;
+		height:;
+		margin:;
+		color:rgb(255,255,255);
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		font-size:24px;
+		text-indent: 5px;
+	}
+/* Display de AM-PM*/
+.AM-PM
+	{
+		float:left;
+		width:;
+		height:;
+		margin:;
+		color:rgb(255,255,255);
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		font-size:24px;
+		text-indent: 5px;
+	}
