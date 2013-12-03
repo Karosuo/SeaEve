@@ -1,10 +1,13 @@
 
 import webapp2
-from Handlers import Parser
+from Handlers import ParserPublicidad
+from Handlers import ParserEventos
 
-
-app = webapp2.WSGIApplication([('/captura_publicidad',Parser.Main_Handler),
-  ('/guarda_publicidad', Parser.Captura_Handler),
-  ('/muestra_publicidad', Parser.Parser_Handler),
-  ('/borra_publicidad', Parser.Delete_Handler),
-  ('/img', Parser.Image_Handler),],debug=True)
+app = webapp2.WSGIApplication([('/captura_publicidad',ParserPublicidad.Main_Handler),
+  ('/guarda_publicidad', ParserPublicidad.Captura_Handler),
+  ('/muestra_publicidad', ParserPublicidad.Parser_Handler),
+  ('/borra_publicidad', ParserPublicidad.Delete_Handler),
+  ('/img', ParserPublicidad.Image_Handler),
+  ('/captura_evento', ParserEventos.Captura_Handler),
+  ('/muestra_evento', ParserEventos.Parser_Handler),
+  ('/main', ParserGeneral.Main),],debug=True)
