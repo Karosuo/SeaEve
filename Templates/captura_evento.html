@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<header>
+    
+    <script src="JS/captura.js"></script>
+    
+    <noscript>
+    El sitio necesita tener activo Javascript para funcionar correctamente.
+    </noscript>
+
+</header>
+
+<body>
+    <h1>Captura tu evento</h1>
+    <article>
+    
+    <form action="/sign" method="post"> 
+                <div><label>Nombre:</label></div>
+                <div><input type="text" name="nombre" /></div>
+                <br>
+
+                
+                Seleccionar Imagen:<input type="file" name="imagen"/>
+                <br>
+                
+                <div><label>Descripcion:</label></div>
+                <div><textarea name="descripcion" rows="3" cols="50"></textarea></div>
+                <br>                
+
+                <div><label>Contacto:</label></div>
+                <div>
+                    <label><input type="checkbox" name="facebook"></textarea><img alt="Facebook" src="http://www.underconsideration.com/brandnew/archives/facebook_logo_detail.gif" height="20" width="20" /><input name="url_Facebook" type="text" value="url Facebook" /></label>
+                    <label><input type="checkbox" name="twitter"></textarea><img alt="Twitter" src="http://jesusmartinezgimenez.com/wp-content/uploads/2013/10/Twitter_Logo_Volt1.png" height="20" width="20" /><input name="url_Twitter" type="text" value="url Twitter" /></label>
+                    <label><input type="checkbox" name="google+"></textarea><img alt="Google+" src="http://blog.wardelldesign.com/wp-content/uploads/2013/09/Google-Plus-Logo.png" height="20" width="20" /><input name="url_Google+" type="text" value="url Google+" /></label>
+                </div>
+                <br>
+                
+                <div><label>Tags: (Sepáralas con una coma)</label></div>
+                <div><textarea name="tags" rows="4" cols="55">Palabras con las que se relacione tu evento, para facilitar la búsqueda y relación del mismo.
+                Ej. bandas, música local, rock</textarea>
+                </div>
+                <br>
+                
+
+                Día: <select id="day">
+                {% block days %}
+                {% endblock %}
+                </select>
+
+                Mes: <select id="month">
+                {% block months %}
+                {% endblock %}
+                </select>
+
+                Año: <select id="year">
+                {% block years %}
+                {% endblock %}
+                </select>
+                <br >
+                <br >
+
+                <label><input type="checkbox" name="tipo">Tipo de Evento (true = VIP)</label>
+                <br >
+                <br >
+
+
+                <div><label>Coordenadas/lugar (X lat / Y long):</label></div>
+                <div><input type="text" name="coordX" />
+                    <input type="text" name="coordY" />
+                </div>
+                <br >
+                
+                <div><label>Costo: $</label></div>
+                <div><input name="costo" rows="1" cols="30" />
+                </div>
+                <br >
+                
+                <div><label>Categoria:</label></div>
+                <div>
+                    <label><input type="radio" name="categoria">Deportes</label>
+                    <label><input type="radio" name="categoria">Música</label>
+                    <label><input type="radio" name="categoria">Cultural</label>
+                </div>
+                <br >
+                
+                <div><label>Estado (Activo/Inactivo  por fecha):</label></div>
+                <div>
+                    <label><input type="checkbox" name="estado" /></label>
+                </div>
+                <br >
+                                           
+                <div><label>Direccion:</label></div>
+                <div><textarea name="direccion" rows="1" cols="30"></textarea>
+                </div>
+                <br >    
+                
+
+                Edad público: <select id="edad">
+                {% block years %}
+                {% endblock %}
+                </select>
+                <br >
+                
+                
+                
+                <div><input type="submit" value="Publicar Evento"></div>
+                
+              </form>
+
+        <article>
+
+
+    </body>
+</html>
