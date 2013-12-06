@@ -109,9 +109,14 @@
 				<div class="Cabeza-Gratuitos">
 					
 				</div>
-				<div class="Gratuito">
-					
-				</div>
+				
+				{% block eventos_Gratuitos %}
+				{% endblock %}
+
+				<!--<div class="{!s}">
+					<!-Anchor con imagen principal para darle click y desplegar m[as info en /evento->
+					<a href="{!s}" class="{!s}"><img class="{!s}" alt="{!s}" src="img?publicacion_id={!s}"/><div class="{!s}"><!-Div con imagen de footer de evento mini principal-></div>
+				</div>-->
 				<div class="Gratuito">
 					
 				</div>
@@ -122,10 +127,10 @@
 		</div>
 		<div class="Expansor-Publicidad">
 			<div id="{% block title %}{% endblock %}" class="Contenedor-de-publicidad">
-				{% block content %}
-				<a class="Publicidad" href="">
+				{% block publicidad %}
+				<!--<a class="Publicidad" href="">
 					<img class="Imagen-Publicidad" src="http://upload.wikimedia.org/wikipedia/commons/5/5a/Bosque.jpg"/>
-				</a>
+				</a>-->
 				{% endblock %}
 			</div>
 		</div>
