@@ -1,2 +1,9 @@
-Esto es el Readme
-Probando commits en SeaEve
+SeaEve, Search an Event
+
+Cualidades:
+*Cualquier usuario puede generar un evento y ubicarlo en el mapa.
+*Todos los usuarios tienen preferencias de temas de los eventos y el sistema le filtra los resultados según dichas preferencias.
+*El sistema detecta la ciudad donde se encuentra el usuario y le muestra el mapa con los eventos disponibles.
+*Calendario para organizar los eventos próximos y seccionamiento por colores para identificación visual rápida.
+*Promueve y apoya al talento local.
+*Da una tarjeta de presentación a la ciudad y una guía fácil y rápida para conocerla a través de sus eventos.
